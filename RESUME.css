@@ -1,7 +1,11 @@
 *{
     margin: 0;
-    /* padding: 0; */
-    
+    padding: 0;
+    user-select: none;
+}
+
+body{
+  line-height : 1.6;
 }
 #photo{
 
@@ -11,9 +15,10 @@
 
 }
 .site_heading{
-    background-image: linear-gradient(120deg, #155799, #159957);
+    background-image: linear-gradient(120deg, #2778ca, #159957);
     text-align: center;
     padding: 10px;
+    border-radius: 10px;
 }
 header h1{
     color: white;
@@ -67,6 +72,9 @@ table{
     width: 100%;
     padding: 50px;
     font-size: bold;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
     
 }
 p{
@@ -98,5 +106,41 @@ p{
     button {
       width: 100%;
     }
+}
+
+footer {
+  background: linear-gradient(135deg, #2778ca, #159957);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: auto;
+}
+
+footer a {
+  display: inline-block;
+  margin: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+
+footer a img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease-in-out, filter 0.3s;
+}
+
+footer a:hover img {
+  transform: scale(1.1);
+  filter: brightness(1) invert(0);
+}
+
+footer p {
+  font-size: 16px;
+  margin-top: 5px;
+  opacity: 0.7;
 }
 
