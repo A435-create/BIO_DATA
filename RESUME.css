@@ -4,8 +4,8 @@
     
 }
 #photo{
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;  
 }
 .site_heading{
@@ -71,3 +71,29 @@ p{
     font-size: larger;
     line-height: 30px;
 }
+@media (max-width: 768px) {
+    #photo {
+      display: block;
+      margin: auto;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    table, th, td {
+      font-size: 14px;
+    }
+    .container {
+      padding: 20px;
+    }
+    }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 22px;
+    }
+    p, li {
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+    }
+    }
